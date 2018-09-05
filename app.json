@@ -1,0 +1,15 @@
+{
+    "pages":[
+       "pages/event/event",
+        "pages/app/app",
+        "pages/home/home"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#e64340",
+      "navigationBarTextStyle": "#654445",
+      "navigationBarTitleText": "图书城",
+      "backgroundColor": "#cccccc",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    }
+}

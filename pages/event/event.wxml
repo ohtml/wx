@@ -1,0 +1,5 @@
+<view bindtap='outer'>
+  <view bindtap='inner'>
+     测试事件
+  </view>
+</view>
