@@ -1,2 +1,14 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<import src="list-tmpl/list-tmpl.wxml" />
+<swiper class='swiperimg' indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" style='width:100%' circular="{{true}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item wx:for-item="num">
+      <image src="{{item}}" class="slide-image" class='img' />
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{lists}}" wx:key="{{index}}" >
+  <view bindtap="detail" data-uid="{{item.id}}">
+    <template is="list" data="{{...item}}"></template>
+  </view>
+</block>

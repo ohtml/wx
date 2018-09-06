@@ -1,5 +1,2 @@
-<view class='container'>
- <image class='img' src="../../images/1.png" ></image>
- <text class="title">你好</text>
- <text class="content">内容</text>
-</view>
+<!--pages/app/app.wxml-->
+<text>pages/app/app.wxml</text>

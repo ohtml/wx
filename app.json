@@ -1,15 +1,33 @@
 {
     "pages":[
-       "pages/event/event",
+        "pages/home/home",
         "pages/app/app",
-        "pages/home/home"
+        "pages/index/index",
+        "pages/home/detail/detail"
     ],
     "window": {
       "navigationBarBackgroundColor": "#e64340",
       "navigationBarTextStyle": "#654445",
-      "navigationBarTitleText": "图书城",
+      "navigationBarTitleText": "图书城0",
       "backgroundColor": "#cccccc",
       "backgroundTextStyle": "light",
       "enablePullDownRefresh": false
+    },
+    "tabBar": {
+      "borderStyle": "white",
+      "list": [{
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "./images/dissOne.png",
+        "selectedIconPath": "/images/dissOneH.png"
+      },
+      {
+        "pagePath": "pages/app/app",
+        "text": "app",
+        "iconPath": "./images/dissFive.png",
+        "selectedIconPath": "./images/dissFiveH.png"
+      }
+     
+      ]
     }
 }

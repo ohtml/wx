@@ -1,0 +1,7 @@
+<!--pages/home/detail/detail.wxml-->
+<import src="../list-tmpl/list-tmpl.wxml"/>
+
+<template is="list" data="{{item}}">
+    
+       
+</template>

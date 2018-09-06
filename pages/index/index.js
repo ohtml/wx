@@ -1,13 +1,20 @@
-// pages/event/event.js
+// pages/index/index.js
 Page({
-  outer:()=>{
-    console.log("ddd")
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
-
+    
+  },
+  gopage(){
+    console.log("3333333");
+    wx.switchTab({
+      url: '../home/home',
+    });
+    // wx.navigateTo({
+    //   url: '../home/home',
+    // })
   },
 
   /**

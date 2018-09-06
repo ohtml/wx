@@ -1,0 +1,40 @@
+.list-container {
+    font-family: "Microsoft YaHei";
+    margin: 10rpx;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid#cccccc;
+    height: 110rpx;
+    padding: 10rpx;
+  }
+  .list-container .list-right,
+  .list-container .list-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-container .list-left {
+    text-align: center;
+    width: 150rpx;
+  }
+  .list-container .list-left .list-title {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .list-container .list-left .list-name {
+    font-size: 24rpx;
+  }
+  .list-container .list-right {
+    width: 500rpx;
+    text-align: left;
+    font-size: 24rpx;
+  }
+  .list-container .list-right .list-title {
+    font-size: 32rpx;
+  }
+  .list-container .list-right .list-content {
+    padding-top: 10rpx;
+  }
+  
