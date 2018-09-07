@@ -1,63 +1,48 @@
-// pages/app/app.js
+// pages/app/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index:1,
-    nodelist: [
-      
-    ]
+    title: "",
+    content: ""
 
   },
-  // 滚动到底部的方法
-  lazyload(){
-    let index = this.data.index+1;
-    let nodelist = wx.getStorageSync('list') || [];
-    let newlist = nodelist.reverse();
+  val1(e) {
     this.setData({
-      nodelist: newlist.slice(0, index*5),
-      index
-    })
-  } ,
-  clearStorage(){
-    wx.showToast({
-      title:"删除了"
-    })
-    wx.clearStorageSync();
-    this.setData({
-      nodelist:[]
+      title: e.detail.value
     })
   },
-  nodeDetail: () => {
-    wx.navigateTo({
-      url: 'detail/detail',
+  val2(e) {
+    this.setData({
+      content: e.detail.value
     })
-
   },
-  
-  onPullDownRefreash(){
-    //去请求接口
-    setTimeout(function(){
-      wx.stopPullDownRefresh();
-    },1000)
-     
+  addEvent() {
+    let obj = {
+      title: this.data.title,
+      content: this.data.content,
+    }
+    let lists = wx.getStorageSync('list') || [];
+    lists.push(obj);
+    wx.setStorageSync('list', lists);
+    //添加完成返回
+    wx.navigateBack({
+      delta: 1, // 回退前 delta(默认为1) 页面
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // let nodelist = wx.getStorageSync('list') || [];
-    // this.setData({
-    //   nodelist
-    // })
+
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
 
   },
 
@@ -65,11 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let nodelist = wx.getStorageSync('list') || [];
-    let newlist = nodelist.reverse();
-    this.setData({
-      nodelist: newlist.slice(0, 5)
-    })
+
   },
 
   /**

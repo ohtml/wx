@@ -1,7 +1,8 @@
 {
     "pages":[
-        "pages/home/home",
         "pages/app/app",
+        "pages/app/detail/detail",
+        "pages/home/home",
         "pages/index/index",
         "pages/home/detail/detail"
     ],
@@ -23,11 +24,10 @@
       },
       {
         "pagePath": "pages/app/app",
-        "text": "app",
+        "text": "记事本",
         "iconPath": "./images/dissFive.png",
         "selectedIconPath": "./images/dissFiveH.png"
       }
-     
       ]
     }
 }

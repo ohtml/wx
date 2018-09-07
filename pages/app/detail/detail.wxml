@@ -1,0 +1,9 @@
+<view class="detail">
+    <label class="title">标题</label>
+    <input type="text" class="detail-content" bindinput="val1" placeholder="请输入标题"></input>
+    <label class="title">内容</label>
+    <textarea class="detail-content" bindinput="val2" placeholder="请输入内容" name="" id="" cols="30" rows="10"></textarea>
+</view>
+<view class="detail-btn">
+    <button type="primary" bindtap="addEvent" size="mini">添加</button>
+</view>

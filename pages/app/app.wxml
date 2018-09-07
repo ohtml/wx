@@ -1,2 +1,13 @@
-<!--pages/app/app.wxml-->
-<text>pages/app/app.wxml</text>
+<scroll-view scroll="{{true}}" scroll-y style="height:500rpx;" bindscrolltolower="lazyload">
+    <block wx:for="{{nodelist}}" wx:key="{{index}}">
+        <view class="node-contaier">
+            <text class="title">{{item.title}}</text>
+            <text class="content">{{item.content}}</text>
+        </view>
+    </block>
+
+    <view class="node-btn">
+        <button type="warn" size="mini" bindtap="clearStorage">删除</button>
+        <button type="warn" size="mini" bindtap="nodeDetail">添加</button>
+    </view>
+</scroll-view>

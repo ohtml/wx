@@ -94,6 +94,7 @@
 - e事件源 
 ```
   //e e.target
+  // 跳转路径是相对的，不用后缀，也可以跳
 ```
 ###  详情页 拿 id
 ```
@@ -105,4 +106,45 @@
  -  可以在 上一级的 传的时候  [...item], 
 
 
-### 明天 播放器37:13
+### 明天 播放器37:13 ?? 第二个视频 
+```
+```
+### 记事本 表单
+- scroll 滚动条
+- flex 的布局？ --------
+- 缓存 sess 
+- 在input 上绑定方法 bindinput , 用户输入就触发。 
+```
+val1
+val2
+```
+## 样式 flex
+```
+   flex-direction: column;
+```
+### 绑定方法有**********
+```
+ bindinput
+ bindtap
+ catchtap
+```
+### 缓存
+
+## 事件
+- navigateBack 页面返回
+- onShow 页面返回会加载。 而onLoad，页面返回不会加载 所以写事件时候注意
+- bindscrolltolower > scroll-view 中的事件 滚动到底部触发的事件
+- onPullDownRefreash 监听页面刷新的事件
+- wx.stopPullDownRefresh(); 停止页面下拉刷新的
+
+## 用的js方示
+- reverse 翻转
+- 
+## 页面下拉刷新 在jons中配置
+```
+  {
+  "enablePullDownRefresh": true, 
+  "backgroundColor": "#404040",
+  "backgroundTextStyle": "dark"
+}
+```
