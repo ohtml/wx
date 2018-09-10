@@ -1,42 +1,51 @@
-// pages/app/detail/detail.js
+// pages/request/request.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: "",
-    content: ""
+    val: "",
+    list:[]
 
   },
-  val1(e) {
+  bindval(e) {
     this.setData({
-      title: e.detail.value
+      val: e.detail.value,
+    })
+
+  },
+  bindsearch(){
+    wx.request({
+      url: 'https://api.m.jd.com/?functionId=nineNine&client=nc&clientVersion=1.0.0',
+      data: {
+       body: {"pageNum":"1","pageSize":"10"},
+
+      },
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        // 'content-type': 'application/json'
+      }, // 设置请求的 header
+      success: (res)=>{
+        console.log(res);
+        this.setData({
+          list:res.data.nineList
+        })
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   },
-  val2(e) {
-    this.setData({
-      content: e.detail.value
-    })
-  },
-  addEvent() {
-    let obj = {
-      title: this.data.title,
-      content: this.data.content,
-    }
-    let lists = wx.getStorageSync('list') || [];
-    lists.push(obj);
-    wx.setStorageSync('list', lists);
-    //添加完成返回
-    wx.navigateBack({
-      delta: 1, // 回退前 delta(默认为1) 页面
-    })
-  },
-  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.bindsearch()
 
   },
 

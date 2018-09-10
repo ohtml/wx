@@ -8,7 +8,10 @@
 ## vscode 可以less 的参考文档
  - https://www.jianshu.com/p/327fef0d709a
 
-
+###### appid 
+```
+wx07d08b885d545ad3
+```
 ## app 
 - app.js  全局 js
 - app.json 全局 配置文件
@@ -149,5 +152,16 @@ val2
   "enablePullDownRefresh": true, 
   "backgroundColor": "#404040",
   "backgroundTextStyle": "dark"
+  
 }
 ```
+### picker 滑块
+```
+```
+### 动画 animation
+
+### wx.request 请求, 在开发环境下
+- 工具-详情- 把 不校验域名 勾选，否则会请求不通， 域名不备份的情况下
+- 免费接口 apistore.baidu.com
+
+#### 关于icon的 基本，样式。大小，颜色

@@ -5,9 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    inde: 0,
+    time: '12:01',
+    date:"2016-10-11"
+
   },
-  gopage(){
+  bindTimeChange(e){
+    console.log(e);
+    this.setData({
+      time: e.detail.value
+    })
+  },
+  bindDateChange(e){
+    this.setData({
+      date:e.detail.value
+    })
+
+  },
+  gopage() {
     console.log("3333333");
     wx.switchTab({
       url: '../home/home',

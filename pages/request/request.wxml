@@ -1,0 +1,12 @@
+<input type="text" bindtap="bindval" placeholder="请输入要搜素的内容" value=""></input>
+<button class="btn" bindtap="bindsearch">
+    <icon type="search" size="20"></icon>点击查询内容
+</button>
+<view class="container">
+    <block wx:for="{{list}}" wx:key="{{index}}">
+        <view class="list-item">
+            <image src="https://img12.360buyimg.com/cms/s276x276_{{item.imagePath}}"> </image>
+            <text>{{item.title}}</text>
+        </view>
+    </block>
+</view>

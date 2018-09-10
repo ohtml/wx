@@ -1,0 +1,29 @@
+.btn {
+  margin: 10rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.list-item {
+  background: #f1f1f1f1;
+  height: 150rpx;
+  margin-top: 10rpx;
+  width: 100%;
+}
+.list-item image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+  position: absolute;
+}
+.list-item text {
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  padding-left: 180rpx;
+  display: inline-block;
+  padding-top: 10rpx;
+}

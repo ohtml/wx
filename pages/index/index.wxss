@@ -1,1 +1,10 @@
 /* pages/index/index.wxss */
+
+.section__title{
+    font-size: 30rpx;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 20rpx;
+    margin-top:20rpx;
+    padding-top:20rpx;
+    padding-bottom:20rpx;
+}

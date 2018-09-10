@@ -1,38 +1,13 @@
-// pages/app/detail/detail.js
+// pages/jsonp/jsonp.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: "",
-    content: ""
 
   },
-  val1(e) {
-    this.setData({
-      title: e.detail.value
-    })
-  },
-  val2(e) {
-    this.setData({
-      content: e.detail.value
-    })
-  },
-  addEvent() {
-    let obj = {
-      title: this.data.title,
-      content: this.data.content,
-    }
-    let lists = wx.getStorageSync('list') || [];
-    lists.push(obj);
-    wx.setStorageSync('list', lists);
-    //添加完成返回
-    wx.navigateBack({
-      delta: 1, // 回退前 delta(默认为1) 页面
-    })
-  },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */

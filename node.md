@@ -137,6 +137,9 @@ val2
 - onPullDownRefreash 监听页面刷新的事件
 - wx.stopPullDownRefresh(); 停止页面下拉刷新的
 
+## wx 下的方法
+- wx.showTost 只是提示，没有 组织。没有回调函数，
+
 ## 用的js方示
 - reverse 翻转
 - 

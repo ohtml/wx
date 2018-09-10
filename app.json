@@ -1,22 +1,25 @@
 {
-    "pages":[
-        "pages/app/app",
-        "pages/app/detail/detail",
-        "pages/home/home",
-        "pages/index/index",
-        "pages/home/detail/detail"
-    ],
-    "window": {
-      "navigationBarBackgroundColor": "#e64340",
-      "navigationBarTextStyle": "#654445",
-      "navigationBarTitleText": "图书城0",
-      "backgroundColor": "#cccccc",
-      "backgroundTextStyle": "light",
-      "enablePullDownRefresh": false
-    },
-    "tabBar": {
-      "borderStyle": "white",
-      "list": [{
+  "pages": [
+    "pages/jsonp/jsonp",
+    "pages/request/request",
+    "pages/index/index",
+    "pages/app/app",
+    "pages/app/detail/detail",
+    "pages/home/home",
+    "pages/home/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e64340",
+    "navigationBarTextStyle": "#654445",
+    "navigationBarTitleText": "图书城0",
+    "backgroundColor": "#cccccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
         "pagePath": "pages/home/home",
         "text": "home",
         "iconPath": "./images/dissOne.png",
@@ -28,6 +31,6 @@
         "iconPath": "./images/dissFive.png",
         "selectedIconPath": "./images/dissFiveH.png"
       }
-      ]
-    }
+    ]
+  }
 }
