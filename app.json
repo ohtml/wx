@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/jsonp/jsonp",
     "pages/request/request",
     "pages/index/index",
     "pages/app/app",
     "pages/app/detail/detail",
-    "pages/home/home",
     "pages/home/detail/detail"
   ],
   "window": {

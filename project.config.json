@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx6d6686270e462a35",
-	"projectname": "wxdemo",
+	"appid": "wx07d08b885d545ad3",
+	"projectname": "api",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
